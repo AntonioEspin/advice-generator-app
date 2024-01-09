@@ -15,6 +15,96 @@
 }
 
 html {
-  font-size: 62,5%;
+  font-size: 62.5%;
   font-family: 'Manrope', sans-serif;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--Dark-Blue);
+}
+
+/* Estilos del contenedor */
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: auto;
+  width: 90%;
+  min-width: 300px;
+  max-width: 500px;
+  height: 350px;
+  background-color: var(--Dark-Grayish-Blue);
+  border-radius: 8px;
+}
+
+.attribution {
+  margin-top: auto;
+}
+
+.advice-number {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.advice-number p {
+  color: var(--Neon-Green);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 800;
+}
+
+.advice-info {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5px;
+}
+
+.advice-info p {
+font-size: 2.5rem;
+text-align: center;
+color: var(--Light-Cyan);
+font-weight: 800;
+}
+
+.image-dice {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+}
+
+.image-dice img {
+  align-self: flex-start;
+}
+
+.button {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background: var(--Neon-Green);
+  border: none;
+  border-radius: 50%;
+  bottom: calc(-30px);
+  left: calc(50% - 30px);
+  cursor: pointer;
+  outline: none;
+}
+
+.button:hover {
+  box-shadow: 0 0 13px 3px var(--Neon-Green);
 }
