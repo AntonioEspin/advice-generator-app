@@ -1,5 +1,6 @@
 const API = 'https://api.adviceslip.com/advice';
 const sentence = document.querySelector('.advice-info p'); 
+const adviceNumber = document.querySelector('.advice-number p');
 const button = document.querySelector('.button');
 button.addEventListener('click', getAdvice)
 
@@ -17,6 +18,6 @@ async function getFetch (index) {
 async function getAdvice () {
   const indexRandomAdvice = Math.floor(Math.random() * adviceNumberList.length) + 1;
   const advice = await getFetch(indexRandomAdvice)
-  console.log(advice)
   sentence.textContent = `${advice}`
+  adviceNumber.textContent = `Advice #${indexRandomAdvice}`
 }

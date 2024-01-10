@@ -108,3 +108,11 @@ font-weight: 800;
 .button:hover {
   box-shadow: 0 0 13px 3px var(--Neon-Green);
 }
+
+/* media queries */
+@media (min-width:700px){
+  .container {
+    max-width: 700px;
+    padding: 0 100px;
+  }
+}
